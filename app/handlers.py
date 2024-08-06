@@ -16,6 +16,6 @@ async def cmd_help(message: message):
     await message.answer("Tebe Tolko bog pomoshet")
 
 
-@router.message(F.text == "Okey")
-async def otvet(message: message):
-    await message.answer("А у меня тоже всё ок")
+@router.message(F.text == "Katalog")
+async def catalog(message: message):
+    await message.answer("Выбери категорию товара", reply_markup=kb.catalog)

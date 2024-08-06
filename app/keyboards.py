@@ -4,10 +4,11 @@ main = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="Katalog")],
                                     [KeyboardButton(text="Trash")],     
                                     [KeyboardButton(text="Contacts"),     
                                     KeyboardButton(text="What this")]],    
-                                    resize_keyboard=True,
-                                    input_field_placeholder="Выбери пункт меню...")
+                            resize_keyboard=True,
+                            input_field_placeholder="Выбери пункт меню...")
 
 
-catalog = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="Futbolka")],
-                                                [InlineKeyboardButton(text="krosowki")],
-                                                [InlineKeyboardButton(text="Kepki")]])
+catalog = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Futbolka", callback_data="Футболка")],
+    [InlineKeyboardButton(text="krosowki", callback_data="Кросовки")],
+    [InlineKeyboardButton(text="Kepki", callback_data="Кепки")]])
